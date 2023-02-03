@@ -1,0 +1,16 @@
+
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using RelationshipAPI.Entities;
+
+namespace RelationshipAPI.Data 
+{
+    public class DataContext : DbContext
+    {
+        public DataContext(DbContextOptions options) : base(options)
+        {
+        }
+        public DbSet<AppUser> Users  { get; set; }
+    }
+}
