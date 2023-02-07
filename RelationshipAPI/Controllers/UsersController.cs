@@ -8,7 +8,7 @@ using RelationshipAPI.Entities;
 namespace RelationshipAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] // /api/users
+    [Route("api/[controller]")] // /api/users (get return users) 
     public class UsersController : ControllerBase
     {
         private readonly DataContext _context;
