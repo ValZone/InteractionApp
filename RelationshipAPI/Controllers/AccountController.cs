@@ -43,7 +43,6 @@ namespace RelationshipAPI.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-
             return new UserDto
             {
                 Username = user.UserName,
