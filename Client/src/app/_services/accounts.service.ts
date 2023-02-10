@@ -46,8 +46,6 @@ export class AccountsService {
    setCurrentUser(user: User){
       this.currentUserSource.next(user);
    }
-
-
    logout(){
     localStorage.removeItem('user')  // removes item when user actually logsout
     this.currentUserSource.next(null);
